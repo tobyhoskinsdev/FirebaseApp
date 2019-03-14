@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirebaseApp</string>
+    <string name="enter_user_email">Enter User Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_up_user">Sign Up User</string>
+    <string name="sign_on_user">Sign On User</string>
+</resources>

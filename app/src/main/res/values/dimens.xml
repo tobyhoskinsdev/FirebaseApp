@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_display">22sp</dimen>
+    <dimen name="edit_text_margin">10dp</dimen>
+    <dimen name="button_margin">20dp</dimen>
+</resources>
