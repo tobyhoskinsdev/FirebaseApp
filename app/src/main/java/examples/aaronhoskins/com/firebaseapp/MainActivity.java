@@ -2,6 +2,7 @@ package examples.aaronhoskins.com.firebaseapp;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -105,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
                             firebaseUser = firebaseAuth.getCurrentUser();
                             displayWelcomeMessage();
 
+
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("TAG", "signInWithEmail:failure", task.getException());
@@ -119,5 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void displayWelcomeMessage() {
         tvDisplay.setText(String.format(Locale.US, WELCOME_MESSAGE, firebaseUser.getEmail()));
+        startActivity(new Intent(this, DataEntryActivity.class));
+
     }
 }

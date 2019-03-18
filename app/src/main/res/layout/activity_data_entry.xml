@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DataEntryActivity">
+
+    <EditText
+        android:id="@+id/etEngine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Engine"/>
+
+    <EditText
+        android:id="@+id/etTransmission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Transmission"/>
+
+    <EditText
+        android:id="@+id/etWheels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wheels"/>
+
+    <EditText
+        android:id="@+id/etMake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Make"/>
+
+    <EditText
+        android:id="@+id/etModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Model"/>
+
+    <Button
+        android:id="@+id/btnSaveToRemoteDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save to Remote DB"
+        android:onClick="onSaveClick"/>
+
+</LinearLayout>
